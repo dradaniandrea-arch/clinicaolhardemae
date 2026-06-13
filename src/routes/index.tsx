@@ -755,10 +755,10 @@ function Footer() {
               Siga-nos
             </h5>
             <p className="flex items-center gap-2 text-sm">
-              <Instagram className="size-4 text-primary" /> @olhardemaemoc
+              <Camera className="size-4 text-primary" /> @olhardemaemoc
             </p>
             <p className="flex items-center gap-2 text-sm">
-              <Facebook className="size-4 text-primary" /> Olhar de Mãe
+              <Globe className="size-4 text-primary" /> Olhar de Mãe
             </p>
           </div>
         </div>
