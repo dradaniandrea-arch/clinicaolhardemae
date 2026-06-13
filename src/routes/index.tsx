@@ -18,8 +18,8 @@ import {
   Quote,
   MapPin,
   Phone,
-  Instagram,
-  Facebook,
+  Camera,
+  Globe,
 } from "lucide-react";
 
 import heroDanielly from "@/assets/hero-danielly.jpg";
