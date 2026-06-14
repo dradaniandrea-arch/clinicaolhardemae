@@ -140,7 +140,7 @@ function Nav() {
         </a>
       </div>
       <a
-        href={WHATSAPP_URL}
+        href={WHATSAPP_CONSULTA_URL}
         target="_blank"
         rel="noreferrer"
         className="rounded-full bg-foreground px-5 py-2 text-xs font-bold uppercase tracking-wider text-background transition-all hover:bg-primary"
