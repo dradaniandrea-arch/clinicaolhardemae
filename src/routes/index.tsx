@@ -45,7 +45,9 @@ const spaceCentro = spaceCentroAsset.url;
 const spaceVermelho = spaceVermelhoAsset.url;
 const logoUrl = logoAsset.url;
 
-const WHATSAPP_URL = "https://wa.me/5538999999999";
+const WHATSAPP_VACINA_URL = "https://wa.me/5538988271373";
+const WHATSAPP_CONSULTA_URL = "https://wa.me/553830832343";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
