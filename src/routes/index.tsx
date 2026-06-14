@@ -822,7 +822,7 @@ function Footer() {
 function StickyWhatsApp() {
   return (
     <a
-      href={WHATSAPP_URL}
+      href={WHATSAPP_VACINA_URL}
       target="_blank"
       rel="noreferrer"
       aria-label="Falar no WhatsApp"
