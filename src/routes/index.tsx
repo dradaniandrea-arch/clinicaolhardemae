@@ -22,13 +22,28 @@ import {
   Globe,
 } from "lucide-react";
 
-import heroDanielly from "@/assets/hero-danielly.jpg";
-import motherDaughter from "@/assets/mother-daughter.jpg";
+import logoAsset from "@/assets/logo-olhar-de-mae.jpeg.asset.json";
+import heroAsset from "@/assets/corpo-clinico.jpeg.asset.json";
+import storyAsset from "@/assets/confraternizacao.jpeg.asset.json";
 import mamaru from "@/assets/mamaru.png";
-import spaceReception from "@/assets/space-reception.jpg";
-import spaceDogBed from "@/assets/space-dog-bed.jpg";
-import spaceVacinas from "@/assets/space-vacinas.jpg";
-import spacePlayground from "@/assets/space-playground.jpg";
+import spaceReceptionAsset from "@/assets/recepcao-logo.jpeg.asset.json";
+import spaceTeamAsset from "@/assets/equipe-recepcao.jpeg.asset.json";
+import spaceVacinasAsset from "@/assets/coracao-vacina.jpeg.asset.json";
+import spaceHallwayAsset from "@/assets/corredor.jpeg.asset.json";
+import spaceEntradaAsset from "@/assets/entrada.jpeg.asset.json";
+import spaceCentroAsset from "@/assets/equipe-centro-azul.jpeg.asset.json";
+import spaceVermelhoAsset from "@/assets/equipe-vermelho.jpeg.asset.json";
+
+const heroDanielly = heroAsset.url;
+const motherDaughter = storyAsset.url;
+const spaceReception = spaceReceptionAsset.url;
+const spaceDogBed = spaceTeamAsset.url;
+const spaceVacinas = spaceVacinasAsset.url;
+const spacePlayground = spaceHallwayAsset.url;
+const spaceEntrada = spaceEntradaAsset.url;
+const spaceCentro = spaceCentroAsset.url;
+const spaceVermelho = spaceVermelhoAsset.url;
+const logoUrl = logoAsset.url;
 
 const WHATSAPP_URL = "https://wa.me/5538999999999";
 
@@ -105,11 +120,8 @@ function LandingPage() {
 function Nav() {
   return (
     <nav className="fixed top-0 z-50 flex w-full items-center justify-between border-b border-foreground/5 bg-background/80 px-6 py-4 backdrop-blur-md">
-      <a href="#" className="flex items-center gap-2.5">
-        <div className="flex size-9 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-white">
-          OM
-        </div>
-        <span className="font-serif text-lg font-bold tracking-tight">Olhar de Mãe</span>
+      <a href="#" className="flex items-center gap-3">
+        <img src={logoUrl} alt="Logomarca Olhar de Mãe" className="h-10 w-auto" />
       </a>
       <div className="hidden gap-8 text-xs font-medium uppercase tracking-widest md:flex">
         <a href="#historia" className="transition-colors hover:text-primary">
@@ -195,9 +207,9 @@ function Hero() {
         <div className="animate-reveal relative [animation-delay:200ms]">
           <img
             src={heroDanielly}
-            alt="Dra. Danielly atendendo uma criança na Clínica Olhar de Mãe"
-            width={1024}
-            height={1280}
+            alt="Dra. Danielly e o corpo clínico da Clínica Olhar de Mãe"
+            width={1600}
+            height={1067}
             className="aspect-[4/5] w-full rounded-[40px] object-cover shadow-2xl"
           />
           <div className="absolute -bottom-6 -left-6 max-w-xs rounded-[32px] bg-sage p-8 text-white shadow-xl">
@@ -240,11 +252,11 @@ function Story() {
           <div className="grid items-center gap-12 md:grid-cols-2">
             <img
               src={motherDaughter}
-              alt="Mãe e filha desenhando juntas o projeto da clínica"
+              alt="Dra. Danielly em momento de confraternização com a equipe da clínica"
               loading="lazy"
-              width={800}
-              height={1000}
-              className="aspect-[3/4] w-full rounded-3xl object-cover"
+              width={1600}
+              height={1067}
+              className="aspect-[4/5] w-full rounded-3xl object-cover"
             />
             <p className="font-serif text-2xl italic md:text-3xl">
               "Ela visualizou cada consultório, a brinquedoteca, a sala de vacinas, o futuro...
@@ -339,10 +351,10 @@ function Space() {
           <figure className="col-span-12 lg:col-span-8">
             <img
               src={spaceReception}
-              alt="Recepção com arco-íris da Clínica Olhar de Mãe"
+              alt="Recepção da Clínica Olhar de Mãe"
               loading="lazy"
               width={1280}
-              height={896}
+              height={960}
               className="size-full rounded-[40px] object-cover"
             />
           </figure>
@@ -350,18 +362,18 @@ function Space() {
             <figure className="h-1/2">
               <img
                 src={spaceDogBed}
-                alt="Consultório com maca em formato de cachorro"
+                alt="Equipe da Olhar de Mãe na recepção"
                 loading="lazy"
-                width={768}
-                height={576}
+                width={1600}
+                height={1067}
                 className="size-full rounded-[40px] object-cover"
               />
             </figure>
             <div className="flex h-1/2 flex-col justify-end rounded-[40px] bg-sage p-8">
-              <h4 className="mb-2 font-serif text-2xl">Sala de Vacinas Espacial</h4>
+              <h4 className="mb-2 font-serif text-2xl">Sala de Vacinas com Carinho</h4>
               <p className="text-xs leading-relaxed opacity-80">
-                Transformamos a vacinação em uma viagem interestelar — leve, divertida e sem
-                medo.
+                Transformamos a vacinação em um momento leve, acolhedor e sem medo —
+                feito com o coração.
               </p>
             </div>
           </div>
@@ -371,21 +383,54 @@ function Space() {
           <figure className="col-span-12 md:col-span-6">
             <img
               src={spaceVacinas}
-              alt="Sala de vacinas com tema espacial"
+              alt="Sala de vacinas Olhar de Mãe"
               loading="lazy"
-              width={768}
-              height={576}
+              width={828}
+              height={552}
               className="aspect-[4/3] w-full rounded-[40px] object-cover"
             />
           </figure>
           <figure className="col-span-12 md:col-span-6">
             <img
               src={spacePlayground}
-              alt="Playground com piscina de bolinhas, escalada e árvore iluminada"
+              alt="Corredor temático com arco-íris e amarelinha"
               loading="lazy"
-              width={768}
-              height={576}
+              width={1280}
+              height={960}
               className="aspect-[4/3] w-full rounded-[40px] object-cover"
+            />
+          </figure>
+        </div>
+
+        <div className="mt-4 grid grid-cols-12 gap-4">
+          <figure className="col-span-12 md:col-span-4">
+            <img
+              src={spaceEntrada}
+              alt="Entrada da Clínica Olhar de Mãe com arco-íris"
+              loading="lazy"
+              width={720}
+              height={960}
+              className="aspect-[3/4] w-full rounded-[40px] object-cover"
+            />
+          </figure>
+          <figure className="col-span-12 md:col-span-4">
+            <img
+              src={spaceCentro}
+              alt="Equipe Olhar de Mãe no salão central colorido"
+              loading="lazy"
+              width={720}
+              height={960}
+              className="aspect-[3/4] w-full rounded-[40px] object-cover"
+            />
+          </figure>
+          <figure className="col-span-12 md:col-span-4">
+            <img
+              src={spaceVermelho}
+              alt="Equipe Olhar de Mãe vestida de vermelho"
+              loading="lazy"
+              width={1600}
+              height={1067}
+              className="aspect-[3/4] w-full rounded-[40px] object-cover"
             />
           </figure>
         </div>
@@ -727,11 +772,8 @@ function Footer() {
     <footer className="border-t border-foreground/5 px-6 py-20">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-12 md:flex-row">
         <div className="max-w-sm">
-          <div className="mb-4 flex items-center gap-2.5">
-            <div className="flex size-9 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-white">
-              OM
-            </div>
-            <span className="font-serif text-xl font-bold tracking-tight">Olhar de Mãe</span>
+          <div className="mb-4 flex items-center gap-3">
+            <img src={logoUrl} alt="Logomarca Olhar de Mãe" className="h-12 w-auto" />
           </div>
           <p className="text-sm text-muted">
             Clínica pediátrica em Montes Claros — MG. Pediatria 24h, vacinação e equipe
