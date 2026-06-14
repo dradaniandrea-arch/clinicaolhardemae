@@ -25,7 +25,8 @@ import {
 import logoAsset from "@/assets/logo-olhar-de-mae.jpeg.asset.json";
 import heroAsset from "@/assets/corpo-clinico.jpeg.asset.json";
 import storyAsset from "@/assets/confraternizacao.jpeg.asset.json";
-import mamaru from "@/assets/mamaru.png";
+import mamaruAsset from "@/assets/mamaru-real.jpeg.asset.json";
+import mamaruDaniellyAsset from "@/assets/dra-danielly-mamaru.jpeg.asset.json";
 import spaceReceptionAsset from "@/assets/recepcao-logo.jpeg.asset.json";
 import spaceTeamAsset from "@/assets/equipe-recepcao.jpeg.asset.json";
 import spaceVacinasAsset from "@/assets/coracao-vacina.jpeg.asset.json";
@@ -292,16 +293,28 @@ function Mamaru() {
     <section className="relative overflow-hidden bg-peach/30 px-6 py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-20 lg:grid-cols-2">
         <div className="order-2 lg:order-1">
-          <div className="relative mx-auto size-72 rounded-full bg-sage/20 p-8 md:size-96 md:p-12">
-            <img
-              src={mamaru}
-              alt="Mamarú, a mascote canguru da Clínica Olhar de Mãe"
-              loading="lazy"
-              width={800}
-              height={800}
-              className="size-full object-contain"
-            />
-            <div className="absolute -right-4 -top-4 flex size-24 rotate-12 items-center justify-center rounded-full bg-primary p-4 text-center text-[10px] font-bold uppercase leading-tight text-white">
+          <div className="relative mx-auto max-w-md">
+            <div className="overflow-hidden rounded-[2.5rem] bg-sage/20 shadow-xl">
+              <img
+                src={mamaruAsset.url}
+                alt="Mamarú, a mascote canguru da Clínica Olhar de Mãe"
+                loading="lazy"
+                width={1080}
+                height={1620}
+                className="aspect-[2/3] w-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-10 -right-6 w-40 overflow-hidden rounded-3xl border-4 border-background shadow-xl md:w-52">
+              <img
+                src={mamaruDaniellyAsset.url}
+                alt="Dra. Danielly ao lado da mascote Mamarú"
+                loading="lazy"
+                width={1080}
+                height={1620}
+                className="aspect-[2/3] w-full object-cover"
+              />
+            </div>
+            <div className="absolute -left-4 -top-4 flex size-24 -rotate-12 items-center justify-center rounded-full bg-primary p-4 text-center text-[10px] font-bold uppercase leading-tight text-white">
               A mascote da proteção
             </div>
           </div>
