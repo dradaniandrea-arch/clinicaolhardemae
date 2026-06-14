@@ -803,9 +803,9 @@ function Footer() {
             <h5 className="text-[10px] font-bold uppercase tracking-widest text-muted">
               Siga-nos
             </h5>
-            <p className="flex items-center gap-2 text-sm">
-              <Camera className="size-4 text-primary" /> @olhardemaemoc
-            </p>
+            <a href="https://instagram.com/clinicaolhardemae" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm transition-colors hover:text-primary">
+              <Camera className="size-4 text-primary" /> @clinicaolhardemae
+            </a>
             <p className="flex items-center gap-2 text-sm">
               <Globe className="size-4 text-primary" /> Olhar de Mãe
             </p>
