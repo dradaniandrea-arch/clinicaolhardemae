@@ -790,9 +790,14 @@ function Footer() {
             <p className="flex items-center gap-2 text-sm">
               <MapPin className="size-4 text-primary" /> Montes Claros, MG
             </p>
-            <p className="flex items-center gap-2 text-sm">
-              <Phone className="size-4 text-primary" /> (38) 9999-9999
-            </p>
+            <a href="tel:3830832343" className="flex items-center gap-2 text-sm transition-colors hover:text-primary">
+              <Phone className="size-4 text-primary" /> (38) 3083-2343
+            </a>
+            <p className="text-[10px] uppercase tracking-wider opacity-60">Consultas e demais serviços</p>
+            <a href="tel:38988271373" className="flex items-center gap-2 text-sm transition-colors hover:text-primary">
+              <MessageCircle className="size-4 text-primary" /> (38) 9 8827-1373
+            </a>
+            <p className="text-[10px] uppercase tracking-wider opacity-60">Vacinação e orientações (WhatsApp)</p>
           </div>
           <div className="space-y-3">
             <h5 className="text-[10px] font-bold uppercase tracking-widest text-muted">
