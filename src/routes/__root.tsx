@@ -83,6 +83,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Clínica Olhar de Mãe" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Clínica Olhar de Mãe | Pediatria 24h e Vacinação em Montes Claros" },
+      { name: "twitter:title", content: "Clínica Olhar de Mãe | Pediatria 24h e Vacinação em Montes Claros" },
+      { property: "og:description", content: "Há 11 anos cuidando de quem você mais ama. Pediatria 24 horas, vacinação e atendimento multidisciplinar em Montes Claros." },
+      { name: "twitter:description", content: "Há 11 anos cuidando de quem você mais ama. Pediatria 24 horas, vacinação e atendimento multidisciplinar em Montes Claros." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CBI3eh7WUXhPW9bW7TtnoqaxSeB3/social-images/social-1781402805830-logo_olhar_de_mae.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CBI3eh7WUXhPW9bW7TtnoqaxSeB3/social-images/social-1781402805830-logo_olhar_de_mae.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
