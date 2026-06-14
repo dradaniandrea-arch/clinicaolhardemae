@@ -45,7 +45,9 @@ const spaceCentro = spaceCentroAsset.url;
 const spaceVermelho = spaceVermelhoAsset.url;
 const logoUrl = logoAsset.url;
 
-const WHATSAPP_URL = "https://wa.me/5538999999999";
+const WHATSAPP_VACINA_URL = "https://wa.me/5538988271373";
+const WHATSAPP_CONSULTA_URL = "https://wa.me/553830832343";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -138,7 +140,7 @@ function Nav() {
         </a>
       </div>
       <a
-        href={WHATSAPP_URL}
+        href={WHATSAPP_CONSULTA_URL}
         target="_blank"
         rel="noreferrer"
         className="rounded-full bg-foreground px-5 py-2 text-xs font-bold uppercase tracking-wider text-background transition-all hover:bg-primary"
@@ -170,7 +172,7 @@ function Hero() {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href={WHATSAPP_URL}
+              href={WHATSAPP_CONSULTA_URL}
               target="_blank"
               rel="noreferrer"
               className="flex cursor-pointer items-center gap-2 rounded-full bg-primary px-8 py-4 font-semibold text-white shadow-xl shadow-primary/20 transition-transform hover:scale-105"
@@ -179,7 +181,7 @@ function Hero() {
               Agendar Consulta
             </a>
             <a
-              href={WHATSAPP_URL}
+              href={WHATSAPP_VACINA_URL}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 rounded-full border border-foreground/10 px-8 py-4 font-semibold transition-colors hover:bg-peach"
@@ -527,7 +529,7 @@ function Services() {
               <h3 className="mb-4 font-serif text-2xl">{title}</h3>
               <p className="mb-8 text-sm leading-relaxed text-muted">{desc}</p>
               <a
-                href={WHATSAPP_URL}
+                href={WHATSAPP_CONSULTA_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4"
@@ -741,7 +743,7 @@ function FinalCTA() {
         </p>
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <a
-            href={WHATSAPP_URL}
+            href={WHATSAPP_VACINA_URL}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-2 rounded-full bg-primary px-10 py-5 text-lg font-bold text-white transition-transform hover:scale-105"
@@ -750,7 +752,7 @@ function FinalCTA() {
             Agendar pelo WhatsApp
           </a>
           <a
-            href={WHATSAPP_URL}
+            href={WHATSAPP_CONSULTA_URL}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-2 rounded-full border border-background/30 px-10 py-5 text-lg font-bold transition-all hover:bg-background hover:text-foreground"
@@ -788,9 +790,14 @@ function Footer() {
             <p className="flex items-center gap-2 text-sm">
               <MapPin className="size-4 text-primary" /> Montes Claros, MG
             </p>
-            <p className="flex items-center gap-2 text-sm">
-              <Phone className="size-4 text-primary" /> (38) 9999-9999
-            </p>
+            <a href="tel:3830832343" className="flex items-center gap-2 text-sm transition-colors hover:text-primary">
+              <Phone className="size-4 text-primary" /> (38) 3083-2343
+            </a>
+            <p className="text-[10px] uppercase tracking-wider opacity-60">Consultas e demais serviços</p>
+            <a href="tel:38988271373" className="flex items-center gap-2 text-sm transition-colors hover:text-primary">
+              <MessageCircle className="size-4 text-primary" /> (38) 9 8827-1373
+            </a>
+            <p className="text-[10px] uppercase tracking-wider opacity-60">Vacinação e orientações (WhatsApp)</p>
           </div>
           <div className="space-y-3">
             <h5 className="text-[10px] font-bold uppercase tracking-widest text-muted">
@@ -820,7 +827,7 @@ function Footer() {
 function StickyWhatsApp() {
   return (
     <a
-      href={WHATSAPP_URL}
+      href={WHATSAPP_VACINA_URL}
       target="_blank"
       rel="noreferrer"
       aria-label="Falar no WhatsApp"
