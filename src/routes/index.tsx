@@ -172,7 +172,7 @@ function Hero() {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href={WHATSAPP_URL}
+              href={WHATSAPP_CONSULTA_URL}
               target="_blank"
               rel="noreferrer"
               className="flex cursor-pointer items-center gap-2 rounded-full bg-primary px-8 py-4 font-semibold text-white shadow-xl shadow-primary/20 transition-transform hover:scale-105"
@@ -181,7 +181,7 @@ function Hero() {
               Agendar Consulta
             </a>
             <a
-              href={WHATSAPP_URL}
+              href={WHATSAPP_VACINA_URL}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 rounded-full border border-foreground/10 px-8 py-4 font-semibold transition-colors hover:bg-peach"
