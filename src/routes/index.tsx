@@ -108,6 +108,7 @@ function LandingPage() {
       <WhyUs />
       <Numbers />
       <MissionVisionValues />
+      <Convenios />
       <Testimonials />
       <FinalCTA />
       <Footer />
@@ -580,6 +581,74 @@ function WhyUs() {
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+/* Convênios                                                                   */
+/* -------------------------------------------------------------------------- */
+const convenios = [
+  "Polícia Militar de Minas Gerais",
+  "Terranossa",
+  "Fundaffemg",
+  "Postal Saúde",
+  "Fusex",
+  "Gama Saúde",
+  "GEAP Saúde",
+  "Vitallis",
+  "Life Empresarial Saúde",
+  "BR Petrobras",
+  "Cemig",
+  "Fundação Libertas",
+  "CASU UFMG",
+  "Fundação Saúde Itaú",
+  "Casembrapa",
+  "Proasa",
+  "Caixa",
+  "Amil",
+  "Bradesco Saúde",
+  "AMMP",
+  "Cabefe",
+  "Casec",
+  "Camed Saúde",
+  "Copasa",
+  "Amagis Saúde",
+  "Fundação Assefaz",
+  "Capesesp",
+];
+
+function Convenios() {
+  return (
+    <section id="convenios" className="px-6 py-32">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 max-w-2xl">
+          <span className="mb-4 block text-xs font-bold uppercase tracking-widest text-primary">
+            Convênios
+          </span>
+          <h2 className="mb-6 font-serif text-5xl">Planos de saúde atendidos</h2>
+          <p className="text-lg text-foreground/70">
+            Trabalhamos com os principais convênios da região para que sua família
+            tenha acesso ao melhor cuidado pediátrico com a cobertura do seu plano.
+          </p>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          {convenios.map((nome) => (
+            <span
+              key={nome}
+              className="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground"
+            >
+              {nome}
+            </span>
+          ))}
+        </div>
+
+        <p className="mt-10 text-sm text-foreground/60">
+          Não encontrou seu plano? Fale com a nossa equipe — novas parcerias são
+          adicionadas constantemente.
+        </p>
       </div>
     </section>
   );
