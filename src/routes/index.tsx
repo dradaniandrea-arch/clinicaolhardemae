@@ -529,7 +529,7 @@ function Services() {
               <h3 className="mb-4 font-serif text-2xl">{title}</h3>
               <p className="mb-8 text-sm leading-relaxed text-muted">{desc}</p>
               <a
-                href={WHATSAPP_URL}
+                href={WHATSAPP_CONSULTA_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4"
