@@ -743,7 +743,7 @@ function FinalCTA() {
         </p>
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <a
-            href={WHATSAPP_URL}
+            href={WHATSAPP_VACINA_URL}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-2 rounded-full bg-primary px-10 py-5 text-lg font-bold text-white transition-transform hover:scale-105"
@@ -752,7 +752,7 @@ function FinalCTA() {
             Agendar pelo WhatsApp
           </a>
           <a
-            href={WHATSAPP_URL}
+            href={WHATSAPP_CONSULTA_URL}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-2 rounded-full border border-background/30 px-10 py-5 text-lg font-bold transition-all hover:bg-background hover:text-foreground"
