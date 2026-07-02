@@ -895,6 +895,12 @@ function Footer() {
         </div>
       </div>
       <div className="mx-auto mt-20 max-w-7xl border-t border-foreground/5 pt-8 text-center">
+        <Link
+          to="/politica-de-privacidade"
+          className="mb-2 block text-[10px] uppercase tracking-widest text-muted transition-colors hover:text-primary"
+        >
+          Política de Privacidade
+        </Link>
         <p className="text-[10px] uppercase tracking-widest italic opacity-40">
           © {new Date().getFullYear()} Olhar de Mãe. O cuidado que atravessa gerações.
         </p>
