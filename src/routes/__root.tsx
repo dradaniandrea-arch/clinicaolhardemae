@@ -89,6 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "Há 11 anos cuidando de quem você mais ama. Pediatria 24 horas, vacinação e atendimento multidisciplinar em Montes Claros." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CBI3eh7WUXhPW9bW7TtnoqaxSeB3/social-images/social-1781402805830-logo_olhar_de_mae.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CBI3eh7WUXhPW9bW7TtnoqaxSeB3/social-images/social-1781402805830-logo_olhar_de_mae.webp" },
+      { name: "facebook-domain-verification", content: "gfwuu9robe2iqocbalh821geg69r9g" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
