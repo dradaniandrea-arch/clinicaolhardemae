@@ -81,6 +81,8 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "MedicalClinic",
           name: "Clínica Olhar de Mãe",
+          legalName: "Consultório de Pediatria Olhar de Mãe LTDA",
+          taxID: "20.646.529/0001-94",
           description:
             "Clínica pediátrica com atendimento 24h, vacinação e equipe multidisciplinar em Montes Claros - MG.",
           address: {
