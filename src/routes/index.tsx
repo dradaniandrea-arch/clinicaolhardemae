@@ -904,6 +904,9 @@ function Footer() {
         <p className="text-[10px] uppercase tracking-widest italic opacity-40">
           © {new Date().getFullYear()} Olhar de Mãe. O cuidado que atravessa gerações.
         </p>
+        <p className="mt-2 text-[10px] uppercase tracking-widest italic opacity-40">
+          Consultório de Pediatria Olhar de Mãe LTDA · CNPJ 20.646.529/0001-94
+        </p>
       </div>
     </footer>
   );
