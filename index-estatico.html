@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Olhar de Mãe | Pediatria 24h e Vacinação em Montes Claros</title>
+  <meta name="description" content="Há 11 anos cuidando de quem você mais ama. Pediatria 24h, vacinação, desenvolvimento infantil e mais de 20 especialidades em Montes Claros - MG." />
+  <meta name="keywords" content="pediatra em Montes Claros, clínica pediátrica Montes Claros, vacinação em Montes Claros, pediatra 24 horas Montes Claros, clínica infantil Montes Claros, desenvolvimento infantil Montes Claros, psicologia infantil Montes Claros, neuropsicologia infantil Montes Claros" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#fdfaf6',
+            foreground: '#0a1128',
+            muted: '#64748b',
+            primary: '#e67e5f',
+            sage: '#9db2a2',
+            'sage-deep': '#6f8a78',
+            peach: '#fcece2',
+            cream: '#f6efe4',
+            ink: '#0a1128',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #fdfaf6;
+      color: #0a1128;
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection {
+      background-color: rgba(230, 126, 95, 0.2);
+      color: #0a1128;
+    }
+  </style>
+</head>
+<body class="bg-background text-foreground">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 z-50 flex w-full items-center justify-between border-b border-foreground/5 bg-background/80 px-6 py-4 backdrop-blur-md">
+    <a href="#" class="flex items-center gap-3">
+      <img src="/__l5e/assets-v1/0cfe6947-d348-46b5-8bcc-e706fbd76ac7/logo-olhar-de-mae.jpeg" alt="Logomarca Olhar de Mãe" class="h-10 w-auto" />
+    </a>
+    <div class="hidden gap-8 text-xs font-medium uppercase tracking-widest md:flex">
+      <a href="#historia" class="transition-colors hover:text-primary">Nossa História</a>
+      <a href="#servicos" class="transition-colors hover:text-primary">Serviços</a>
+      <a href="#espaco" class="transition-colors hover:text-primary">O Espaço</a>
+      <a href="#contato" class="transition-colors hover:text-primary">Contato</a>
+    </div>
+    <a
+      href="https://wa.me/553830832343"
+      target="_blank"
+      rel="noreferrer"
+      class="rounded-full bg-foreground px-5 py-2 text-xs font-bold uppercase tracking-wider text-background transition-all hover:bg-primary"
+    >
+      Agendar Consulta
+    </a>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative mx-auto max-w-7xl overflow-hidden px-6 pb-20 pt-32">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      <div>
+        <div class="mb-6 inline-block rounded-full bg-peach px-3 py-1 text-[10px] font-bold uppercase italic tracking-[0.2em] text-primary">
+          Há 11 anos cuidando de quem você ama
+        </div>
+        <h1 class="mb-8 text-balance font-serif text-5xl leading-[1.05] md:text-7xl">
+          Há 11 anos cuidando de <span class="italic text-primary">quem você mais ama.</span>
+        </h1>
+        <p class="mb-10 max-w-[48ch] text-lg leading-relaxed text-muted">
+          Referência em pediatria, vacinação e atendimento multidisciplinar em Montes Claros. Um espaço criado para oferecer proteção, segurança e tranquilidade para toda a família.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="https://wa.me/553830832343"
+            target="_blank"
+            rel="noreferrer"
+            class="flex cursor-pointer items-center gap-2 rounded-full bg-primary px-8 py-4 font-semibold text-white shadow-xl shadow-primary/20 transition-transform hover:scale-105"
+          >
+            <i data-lucide="calendar" class="size-4"></i>
+            Agendar Consulta
+          </a>
+          <a
+            href="https://wa.me/5538988271373"
+            target="_blank"
+            rel="noreferrer"
+            class="flex items-center gap-3 rounded-full border border-foreground/10 px-8 py-4 font-semibold transition-colors hover:bg-peach"
+          >
+            <i data-lucide="message-circle" class="size-4"></i>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <div class="mt-16 grid grid-cols-2 gap-8 border-t border-foreground/5 pt-8 md:grid-cols-4">
+          <div>
+            <span class="block font-mono text-sm text-primary">11+ Anos</span>
+            <span class="text-[10px] uppercase tracking-wider opacity-60">De História</span>
+          </div>
+          <div>
+            <span class="block font-mono text-sm text-primary">24 Horas</span>
+            <span class="text-[10px] uppercase tracking-wider opacity-60">Pediatria</span>
+          </div>
+          <div>
+            <span class="block font-mono text-sm text-primary">20+ Esp.</span>
+            <span class="text-[10px] uppercase tracking-wider opacity-60">Multidisciplinar</span>
+          </div>
+          <div>
+            <span class="block font-mono text-sm text-primary">Regional</span>
+            <span class="text-[10px] uppercase tracking-wider opacity-60">Ref. Vacinação</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img
+          src="/__l5e/assets-v1/fea3eb4a-18d2-4fad-aca3-7d2c4645af35/corpo-clinico.jpeg"
+          alt="Dra. Danielly e o corpo clínico da Clínica Olhar de Mãe"
+          width="1600"
+          height="1067"
+          class="aspect-[4/5] w-full rounded-[40px] object-cover shadow-2xl"
+        />
+        <div class="absolute -bottom-6 -left-6 max-w-xs rounded-[32px] bg-sage p-8 text-white shadow-xl">
+          <i data-lucide="quote" class="mb-3 size-5 opacity-60"></i>
+          <p class="text-sm italic leading-relaxed">
+            "Cuidar de uma criança é proteger o futuro."
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Story -->
+  <section id="historia" class="bg-foreground px-6 py-32 text-background">
+    <div class="mx-auto max-w-4xl">
+      <div class="mb-12 flex items-center gap-4 opacity-40">
+        <div class="h-px flex-1 bg-background"></div>
+        <span class="font-mono text-[10px] uppercase tracking-[0.3em]">O Legado</span>
+        <div class="h-px flex-1 bg-background"></div>
+      </div>
+
+      <h2 class="mb-20 text-center font-serif text-4xl italic md:text-6xl">
+        Antes de existir a Clínica, existia um sonho.
+      </h2>
+
+      <div class="space-y-16 text-lg font-light leading-relaxed text-background/80 md:text-2xl">
+        <p class="text-balance">
+          Antes de existir a Clínica Olhar de Mãe, existia um sonho compartilhado entre mãe e filha. Durante a formação médica da Dra. Danielly, sua mãe recebeu o diagnóstico de câncer gástrico. Foi nesse momento que a vida mostrou um novo propósito: ao invés da cirurgia infantil, surgiu a pediatria.
+        </p>
+
+        <div class="grid items-center gap-12 md:grid-cols-2">
+          <img
+            src="/__l5e/assets-v1/df371663-8a20-4cfb-ace1-66d567556719/confraternizacao.jpeg"
+            alt="Dra. Danielly em momento de confraternização com a equipe da clínica"
+            loading="lazy"
+            width="1600"
+            height="1067"
+            class="aspect-[4/5] w-full rounded-3xl object-cover"
+          />
+          <p class="font-serif text-2xl italic md:text-3xl">
+            "Ela visualizou cada consultório, a brinquedoteca, a sala de vacinas, o futuro... mesmo sem saber se estaria lá para ver."
+          </p>
+        </div>
+
+        <p class="text-balance">
+          Mesmo enfrentando a doença, sua mãe participou de cada etapa da construção. Em setembro de 2014 a clínica ficou pronta. Dias depois ela partiu, deixando um legado que continua vivo em cada olhar, em cada abraço, em cada família acolhida.
+        </p>
+
+        <p class="text-balance font-serif italic text-primary">
+          A Clínica Olhar de Mãe nasceu de um sonho, foi construída com amor e segue crescendo com o propósito de cuidar de cada criança e cada família com o mesmo carinho de um olhar de mãe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mamaru -->
+  <section class="relative overflow-hidden bg-peach/30 px-6 py-32">
+    <div class="mx-auto grid max-w-7xl items-center gap-20 lg:grid-cols-2">
+      <div class="order-2 lg:order-1">
+        <div class="relative mx-auto max-w-md">
+          <div class="overflow-hidden rounded-[2.5rem] bg-sage/20 shadow-xl">
+            <img
+              src="/__l5e/assets-v1/6ac278e9-9862-4b5c-92b1-4b94abc3eadc/mamaru-real.jpeg"
+              alt="Mamarú, a mascote canguru da Clínica Olhar de Mãe"
+              loading="lazy"
+              width="1080"
+              height="1620"
+              class="aspect-[2/3] w-full object-cover"
+            />
+          </div>
+          <div class="absolute -bottom-10 -right-6 w-40 overflow-hidden rounded-3xl border-4 border-background shadow-xl md:w-52">
+            <img
+              src="/__l5e/assets-v1/3db74694-7b3b-4269-b92f-be9906b74a45/dra-danielly-mamaru.jpeg"
+              alt="Dra. Danielly ao lado da mascote Mamarú"
+              loading="lazy"
+              width="1080"
+              height="1620"
+              class="aspect-[2/3] w-full object-cover"
+            />
+          </div>
+          <div class="absolute -left-4 -top-4 flex size-24 -rotate-12 items-center justify-center rounded-full bg-primary p-4 text-center text-[10px] font-bold uppercase leading-tight text-white">
+            A mascote da proteção
+          </div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <span class="mb-4 block text-xs font-bold uppercase tracking-widest text-primary">
+          Conheça a Mamarú
+        </span>
+        <h3 class="mb-8 font-serif text-5xl">O abraço que protege.</h3>
+        <p class="mb-8 text-lg leading-relaxed text-muted">
+          A Mamarú representa tudo aquilo que acreditamos. Assim como o canguru acolhe e protege seu filhote na bolsa, nossa missão é acolher, proteger e acompanhar cada família em sua jornada. Ela simboliza carinho, segurança, desenvolvimento e amor.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-4 font-medium text-foreground/80">
+            <div class="size-2 rounded-full bg-sage"></div>
+            Carinho e Acolhimento
+          </li>
+          <li class="flex items-center gap-4 font-medium text-foreground/80">
+            <div class="size-2 rounded-full bg-sage"></div>
+            Proteção em todas as fases
+          </li>
+          <li class="flex items-center gap-4 font-medium text-foreground/80">
+            <div class="size-2 rounded-full bg-sage"></div>
+            Desenvolvimento Pleno
+          </li>
+          <li class="flex items-center gap-4 font-medium text-foreground/80">
+            <div class="size-2 rounded-full bg-sage"></div>
+            Segurança em cada passo
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Space -->
+  <section id="espaco" class="bg-foreground py-32 text-background">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mb-20 max-w-2xl">
+        <h2 class="mb-4 font-serif text-5xl italic">Onde a magia acontece.</h2>
+        <p class="text-background/60">
+          Cada detalhe foi pensado para transformar o atendimento médico em uma experiência leve, acolhedora e inesquecível.
+        </p>
+      </div>
+
+      <div class="grid h-[800px] grid-cols-12 gap-4">
+        <figure class="col-span-12 lg:col-span-8">
+          <img
+            src="/__l5e/assets-v1/50876817-49e7-44d9-877e-8346fb86106c/recepcao-logo.jpeg"
+            alt="Recepção da Clínica Olhar de Mãe"
+            loading="lazy"
+            width="1280"
+            height="960"
+            class="size-full rounded-[40px] object-cover"
+          />
+        </figure>
+        <div class="col-span-12 flex h-full flex-col gap-4 lg:col-span-4">
+          <figure class="h-1/2">
+            <img
+              src="/__l5e/assets-v1/f4a2575f-4a38-4aca-9564-3b2cfdcc362e/equipe-recepcao.jpeg"
+              alt="Equipe da Olhar de Mãe na recepção"
+              loading="lazy"
+              width="1600"
+              height="1067"
+              class="size-full rounded-[40px] object-cover"
+            />
+          </figure>
+          <div class="flex h-1/2 flex-col justify-end rounded-[40px] bg-sage p-8">
+            <h4 class="mb-2 font-serif text-2xl">Sala de Vacinas com Carinho</h4>
+            <p class="text-xs leading-relaxed opacity-80">
+              Transformamos a vacinação em um momento leve, acolhedor e sem medo — feito com o coração.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 grid grid-cols-12 gap-4">
+        <figure class="col-span-12 md:col-span-6">
+          <img
+            src="/__l5e/assets-v1/f8a6d565-5151-44e4-b0a1-9f8184978d2b/coracao-vacina.jpeg"
+            alt="Sala de vacinas Olhar de Mãe"
+            loading="lazy"
+            width="828"
+            height="552"
+            class="aspect-[4/3] w-full rounded-[40px] object-cover"
+          />
+        </figure>
+        <figure class="col-span-12 md:col-span-6">
+          <img
+            src="/__l5e/assets-v1/a17f8673-96ee-457e-9fec-690006543a6c/corredor.jpeg"
+            alt="Corredor temático com arco-íris e amarelinha"
+            loading="lazy"
+            width="1280"
+            height="960"
+            class="aspect-[4/3] w-full rounded-[40px] object-cover"
+          />
+        </figure>
+      </div>
+
+      <div class="mt-4 grid grid-cols-12 gap-4">
+        <figure class="col-span-12 md:col-span-4">
+          <img
+            src="/__l5e/assets-v1/8ef6083b-4d89-4336-b2f2-9f3db9dcc7cf/entrada.jpeg"
+            alt="Entrada da Clínica Olhar de Mãe com arco-íris"
+            loading="lazy"
+            width="720"
+            height="960"
+            class="aspect-[3/4] w-full rounded-[40px] object-cover"
+          />
+        </figure>
+        <figure class="col-span-12 md:col-span-4">
+          <img
+            src="/__l5e/assets-v1/4cf69bbb-83a6-4d48-8368-f487b8a74787/equipe-centro-azul.jpeg"
+            alt="Equipe Olhar de Mãe no salão central colorido"
+            loading="lazy"
+            width="720"
+            height="960"
+            class="aspect-[3/4] w-full rounded-[40px] object-cover"
+          />
+        </figure>
+        <figure class="col-span-12 md:col-span-4">
+          <img
+            src="/__l5e/assets-v1/0721b03e-2de4-4ca4-be3b-843783541964/equipe-vermelho.jpeg"
+            alt="Equipe Olhar de Mãe vestida de vermelho"
+            loading="lazy"
+            width="1600"
+            height="1067"
+            class="aspect-[3/4] w-full rounded-[40px] object-cover"
+          />
+        </figure>
+      </div>
+
+      <div class="mt-12 grid gap-4 md:grid-cols-4">
+        <div class="rounded-2xl border border-background/10 p-4 text-sm text-background/80">Área instagramável</div>
+        <div class="rounded-2xl border border-background/10 p-4 text-sm text-background/80">Brinquedoteca completa</div>
+        <div class="rounded-2xl border border-background/10 p-4 text-sm text-background/80">Piscina de bolinhas</div>
+        <div class="rounded-2xl border border-background/10 p-4 text-sm text-background/80">Parede de escalada</div>
+        <div class="rounded-2xl border border-background/10 p-4 text-sm text-background/80">Árvore iluminada</div>
+        <div class="rounded-2xl border border-background/10 p-4 text-sm text-background/80">Corredor para desenhos</div>
+        <div class="rounded-2xl border border-background/10 p-4 text-sm text-background/80">Macas em formato de cachorro</div>
+        <div class="rounded-2xl border border-background/10 p-4 text-sm text-background/80">Sala de vacinas espacial</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="servicos" class="px-6 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-20 text-center">
+        <h2 class="mb-6 font-serif text-5xl">Soluções para sua família</h2>
+        <p class="text-muted">Da gestação à vida adulta, suporte médico completo e humanizado.</p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <article class="group rounded-[40px] border border-foreground/5 bg-white p-10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="mb-8 flex size-16 items-center justify-center rounded-2xl bg-peach text-primary">
+            <i data-lucide="moon" class="size-7"></i>
+          </div>
+          <div class="mb-2 font-mono text-[10px] uppercase tracking-widest text-primary/70">24h</div>
+          <h3 class="mb-4 font-serif text-2xl">Pediatria 24 Horas</h3>
+          <p class="mb-8 text-sm leading-relaxed text-muted">Única clínica da região com atendimento pediátrico disponível a qualquer hora do dia ou da noite.</p>
+          <a href="https://wa.me/553830832343" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4">
+            Saiba mais <i data-lucide="arrow-right" class="size-3"></i>
+          </a>
+        </article>
+
+        <article class="group rounded-[40px] border border-foreground/5 bg-white p-10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="mb-8 flex size-16 items-center justify-center rounded-2xl bg-peach text-primary">
+            <i data-lucide="syringe" class="size-7"></i>
+          </div>
+          <div class="mb-2 font-mono text-[10px] uppercase tracking-widest text-primary/70">VAC</div>
+          <h3 class="mb-4 font-serif text-2xl">Vacinação Especializada</h3>
+          <p class="mb-8 text-sm leading-relaxed text-muted">Atendimento na clínica, em empresas ou em domicílio. Protocolos completos com sala temática.</p>
+          <a href="https://wa.me/553830832343" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4">
+            Saiba mais <i data-lucide="arrow-right" class="size-3"></i>
+          </a>
+        </article>
+
+        <article class="group rounded-[40px] border border-foreground/5 bg-white p-10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="mb-8 flex size-16 items-center justify-center rounded-2xl bg-peach text-primary">
+            <i data-lucide="brain" class="size-7"></i>
+          </div>
+          <div class="mb-2 font-mono text-[10px] uppercase tracking-widest text-primary/70">DEV</div>
+          <h3 class="mb-4 font-serif text-2xl">Desenvolvimento Infantil</h3>
+          <p class="mb-8 text-sm leading-relaxed text-muted">Psicologia, neuropsicologia, fonoaudiologia e psicopedagogia integradas em um só lugar.</p>
+          <a href="https://wa.me/553830832343" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4">
+            Saiba mais <i data-lucide="arrow-right" class="size-3"></i>
+          </a>
+        </article>
+
+        <article class="group rounded-[40px] border border-foreground/5 bg-white p-10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="mb-8 flex size-16 items-center justify-center rounded-2xl bg-peach text-primary">
+            <i data-lucide="baby" class="size-7"></i>
+          </div>
+          <div class="mb-2 font-mono text-[10px] uppercase tracking-widest text-primary/70">NEO</div>
+          <h3 class="mb-4 font-serif text-2xl">Sala de Parto</h3>
+          <p class="mb-8 text-sm leading-relaxed text-muted">Assistência pediátrica neonatal qualificada para acolher seu bebê desde o primeiro instante.</p>
+          <a href="https://wa.me/553830832343" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4">
+            Saiba mais <i data-lucide="arrow-right" class="size-3"></i>
+          </a>
+        </article>
+
+        <article class="group rounded-[40px] border border-foreground/5 bg-white p-10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="mb-8 flex size-16 items-center justify-center rounded-2xl bg-peach text-primary">
+            <i data-lucide="stethoscope" class="size-7"></i>
+          </div>
+          <div class="mb-2 font-mono text-[10px] uppercase tracking-widest text-primary/70">ESP</div>
+          <h3 class="mb-4 font-serif text-2xl">Especialidades Médicas</h3>
+          <p class="mb-8 text-sm leading-relaxed text-muted">Mais de 20 especialidades para atender toda a família, da gestação à vida adulta.</p>
+          <a href="https://wa.me/553830832343" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4">
+            Saiba mais <i data-lucide="arrow-right" class="size-3"></i>
+          </a>
+        </article>
+
+        <article class="group rounded-[40px] border border-foreground/5 bg-white p-10 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="mb-8 flex size-16 items-center justify-center rounded-2xl bg-peach text-primary">
+            <i data-lucide="users" class="size-7"></i>
+          </div>
+          <div class="mb-2 font-mono text-[10px] uppercase tracking-widest text-primary/70">MUL</div>
+          <h3 class="mb-4 font-serif text-2xl">Equipe Multidisciplinar</h3>
+          <p class="mb-8 text-sm leading-relaxed text-muted">Pediatras, terapeutas e profissionais reunidos em um modelo de cuidado integral.</p>
+          <a href="https://wa.me/553830832343" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary transition-all group-hover:gap-4">
+            Saiba mais <i data-lucide="arrow-right" class="size-3"></i>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhyUs -->
+  <section class="bg-peach/40 px-6 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-20 max-w-2xl">
+        <span class="mb-4 block text-xs font-bold uppercase tracking-widest text-primary">Diferenciais</span>
+        <h2 class="font-serif text-5xl">Por que escolher a Olhar de Mãe?</h2>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+        <div class="rounded-3xl border border-foreground/5 bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <i data-lucide="heart" class="mb-6 size-7 text-primary" stroke-width="1.5"></i>
+          <p class="font-serif text-xl leading-tight">Atendimento Humanizado</p>
+        </div>
+        <div class="rounded-3xl border border-foreground/5 bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <i data-lucide="users" class="mb-6 size-7 text-primary" stroke-width="1.5"></i>
+          <p class="font-serif text-xl leading-tight">Equipe Multidisciplinar</p>
+        </div>
+        <div class="rounded-3xl border border-foreground/5 bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <i data-lucide="syringe" class="mb-6 size-7 text-primary" stroke-width="1.5"></i>
+          <p class="font-serif text-xl leading-tight">Vacinação Especializada</p>
+        </div>
+        <div class="rounded-3xl border border-foreground/5 bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <i data-lucide="moon" class="mb-6 size-7 text-primary" stroke-width="1.5"></i>
+          <p class="font-serif text-xl leading-tight">Pediatria 24h</p>
+        </div>
+        <div class="rounded-3xl border border-foreground/5 bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <i data-lucide="dna" class="mb-6 size-7 text-primary" stroke-width="1.5"></i>
+          <p class="font-serif text-xl leading-tight">Testes Genéticos</p>
+        </div>
+        <div class="rounded-3xl border border-foreground/5 bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <i data-lucide="home" class="mb-6 size-7 text-primary" stroke-width="1.5"></i>
+          <p class="font-serif text-xl leading-tight">Fototerapia Domiciliar</p>
+        </div>
+        <div class="rounded-3xl border border-foreground/5 bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <i data-lucide="baby" class="mb-6 size-7 text-primary" stroke-width="1.5"></i>
+          <p class="font-serif text-xl leading-tight">Consultoria em Amamentação</p>
+        </div>
+        <div class="rounded-3xl border border-foreground/5 bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <i data-lucide="target" class="mb-6 size-7 text-primary" stroke-width="1.5"></i>
+          <p class="font-serif text-xl leading-tight">Diagnóstico Precoce</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Numbers -->
+  <section class="px-6 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-16 text-center">
+        <span class="mb-4 block text-xs font-bold uppercase tracking-widest text-primary">Números</span>
+        <h2 class="font-serif text-5xl">Confiança construída todos os dias</h2>
+      </div>
+      <div class="grid grid-cols-2 gap-px overflow-hidden rounded-[40px] bg-foreground/10 md:grid-cols-3">
+        <div class="flex flex-col items-start justify-end gap-3 bg-background p-10">
+          <span class="font-serif text-6xl italic text-primary">11</span>
+          <span class="text-sm text-muted">Anos de história</span>
+        </div>
+        <div class="flex flex-col items-start justify-end gap-3 bg-background p-10">
+          <span class="font-serif text-6xl italic text-primary">20+</span>
+          <span class="text-sm text-muted">Especialidades</span>
+        </div>
+        <div class="flex flex-col items-start justify-end gap-3 bg-background p-10">
+          <span class="font-serif text-6xl italic text-primary">11</span>
+          <span class="text-sm text-muted">Pediatras</span>
+        </div>
+        <div class="flex flex-col items-start justify-end gap-3 bg-background p-10">
+          <span class="font-serif text-6xl italic text-primary">24h</span>
+          <span class="text-sm text-muted">Pronto atendimento</span>
+        </div>
+        <div class="flex flex-col items-start justify-end gap-3 bg-background p-10">
+          <span class="font-serif text-6xl italic text-primary">+1k</span>
+          <span class="text-sm text-muted">Famílias atendidas</span>
+        </div>
+        <div class="flex flex-col items-start justify-end gap-3 bg-background p-10">
+          <span class="font-serif text-6xl italic text-primary">#1</span>
+          <span class="text-sm text-muted">Referência regional em vacinação</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Vision Values -->
+  <section class="bg-cream/60 px-6 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-20 max-w-2xl">
+        <span class="mb-4 block text-xs font-bold uppercase tracking-widest text-primary">O que nos move</span>
+        <h2 class="font-serif text-5xl italic">Missão, Visão e Valores</h2>
+      </div>
+      <div class="grid gap-8 md:grid-cols-3">
+        <article class="flex flex-col gap-8 rounded-[40px] border border-foreground/5 bg-background p-10">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-[10px] uppercase tracking-widest text-primary">Missão</span>
+            <i data-lucide="heart" class="size-6 text-sage-deep" stroke-width="1.5"></i>
+          </div>
+          <p class="font-serif text-2xl leading-snug">Acolher, proteger e cuidar de cada criança e cada família com o mesmo carinho de um olhar de mãe, oferecendo medicina de excelência e humanizada.</p>
+        </article>
+
+        <article class="flex flex-col gap-8 rounded-[40px] border border-foreground/5 bg-background p-10">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-[10px] uppercase tracking-widest text-primary">Visão</span>
+            <i data-lucide="sparkles" class="size-6 text-sage-deep" stroke-width="1.5"></i>
+          </div>
+          <p class="font-serif text-2xl leading-snug">Ser referência regional em saúde infantil e bem-estar familiar, reconhecida pela qualidade técnica, acolhimento e propósito de transformar vidas.</p>
+        </article>
+
+        <article class="flex flex-col gap-8 rounded-[40px] border border-foreground/5 bg-background p-10">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-[10px] uppercase tracking-widest text-primary">Valores</span>
+            <i data-lucide="shield-check" class="size-6 text-sage-deep" stroke-width="1.5"></i>
+          </div>
+          <p class="font-serif text-2xl leading-snug">Amor ao próximo, ética médica, escuta ativa, segurança em cada atendimento e o compromisso de honrar o legado que nos deu origem.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Convenios -->
+  <section id="convenios" class="px-6 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-16 max-w-2xl">
+        <span class="mb-4 block text-xs font-bold uppercase tracking-widest text-primary">Convênios</span>
+        <h2 class="mb-6 font-serif text-5xl">Planos de saúde atendidos</h2>
+        <p class="text-lg text-foreground/70">
+          Trabalhamos com os principais convênios da região para que sua família tenha acesso ao melhor cuidado pediátrico com a cobertura do seu plano.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-3">
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Polícia Militar de Minas Gerais</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Terranossa</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Fundaffemg</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Postal Saúde</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Fusex</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Gama Saúde</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">GEAP Saúde</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Vitallis</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Life Empresarial Saúde</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">BR Petrobras</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Cemig</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Fundação Libertas</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">CASU UFMG</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Fundação Saúde Itaú</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Casembrapa</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Proasa</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Caixa</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Amil</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Bradesco Saúde</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">AMMP</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Cabefe</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Casec</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Camed Saúde</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Copasa</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Amagis Saúde</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Fundação Assefaz</span>
+        <span class="rounded-full border border-foreground/10 bg-cream/60 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:border-primary/30 hover:bg-background hover:text-foreground">Capesesp</span>
+      </div>
+
+      <p class="mt-10 text-sm text-foreground/60">
+        Não encontrou seu plano? Fale com a nossa equipe — novas parcerias são adicionadas constantemente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="px-6 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-20 max-w-2xl">
+        <span class="mb-4 block text-xs font-bold uppercase tracking-widest text-primary">Famílias que confiam</span>
+        <h2 class="font-serif text-5xl">O que dizem as mães e pais</h2>
+      </div>
+      <div class="grid gap-8 md:grid-cols-3">
+        <figure class="flex flex-col justify-between gap-8 rounded-[40px] border border-foreground/5 bg-peach/40 p-10">
+          <i data-lucide="quote" class="size-8 text-primary" stroke-width="1.5"></i>
+          <blockquote class="font-serif text-xl italic leading-snug">"Encontramos na Olhar de Mãe muito mais que uma clínica: encontramos uma extensão da nossa família. Atendimento impecável."</blockquote>
+          <figcaption>
+            <div class="font-semibold">Mariana S.</div>
+            <div class="text-xs uppercase tracking-widest text-muted">Mãe da Lara, 3 anos</div>
+          </figcaption>
+        </figure>
+
+        <figure class="flex flex-col justify-between gap-8 rounded-[40px] border border-foreground/5 bg-peach/40 p-10">
+          <i data-lucide="quote" class="size-8 text-primary" stroke-width="1.5"></i>
+          <blockquote class="font-serif text-xl italic leading-snug">"A pediatria 24 horas nos trouxe uma tranquilidade que nenhum outro lugar oferece. A equipe é simplesmente acolhedora."</blockquote>
+          <figcaption>
+            <div class="font-semibold">Rafael e Camila</div>
+            <div class="text-xs uppercase tracking-widest text-muted">Pais do Bento, 1 ano</div>
+          </figcaption>
+        </figure>
+
+        <figure class="flex flex-col justify-between gap-8 rounded-[40px] border border-foreground/5 bg-peach/40 p-10">
+          <i data-lucide="quote" class="size-8 text-primary" stroke-width="1.5"></i>
+          <blockquote class="font-serif text-xl italic leading-snug">"Minha filha ama ir ao médico. Da brinquedoteca à sala de vacinas, tudo foi pensado com tanto carinho que ela pede para voltar."</blockquote>
+          <figcaption>
+            <div class="font-semibold">Júlia M.</div>
+            <div class="text-xs uppercase tracking-widest text-muted">Mãe da Helena, 5 anos</div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="contato" class="bg-foreground px-6 py-32 text-background">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="mb-8 font-serif text-5xl leading-tight md:text-6xl">
+        Quem cuida de uma criança,<br />
+        <span class="italic text-primary">cuida de um futuro.</span>
+      </h2>
+      <p class="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-background/70">
+        Agende sua consulta, atualize suas vacinas ou converse com nossa equipe. Estamos prontos para acolher sua família com o carinho, a atenção e a segurança que ela merece.
+      </p>
+      <div class="flex flex-col justify-center gap-4 sm:flex-row">
+        <a
+          href="https://wa.me/5538988271373"
+          target="_blank"
+          rel="noreferrer"
+          class="flex items-center justify-center gap-2 rounded-full bg-primary px-10 py-5 text-lg font-bold text-white transition-transform hover:scale-105"
+        >
+          <i data-lucide="message-circle" class="size-5"></i>
+          Agendar pelo WhatsApp
+        </a>
+        <a
+          href="https://wa.me/553830832343"
+          target="_blank"
+          rel="noreferrer"
+          class="flex items-center justify-center gap-2 rounded-full border border-background/30 px-10 py-5 text-lg font-bold transition-all hover:bg-background hover:text-foreground"
+        >
+          <i data-lucide="calendar" class="size-5"></i>
+          Marcar Consulta
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-foreground/5 px-6 py-20">
+    <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-12 md:flex-row">
+      <div class="max-w-sm">
+        <div class="mb-4 flex items-center gap-3">
+          <img src="/__l5e/assets-v1/0cfe6947-d348-46b5-8bcc-e706fbd76ac7/logo-olhar-de-mae.jpeg" alt="Logomarca Olhar de Mãe" class="h-12 w-auto" />
+        </div>
+        <p class="text-sm text-muted">
+          Clínica pediátrica em Montes Claros — MG. Pediatria 24h, vacinação e equipe multidisciplinar há mais de 11 anos.
+        </p>
+        <div class="mt-6 rounded-2xl border border-primary/20 bg-primary/5 p-4 transition-all hover:border-primary/40 hover:bg-primary/10">
+          <div class="flex items-start gap-3">
+            <div class="flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary text-white shadow-md shadow-primary/20">
+              <i data-lucide="shield-check" class="size-5"></i>
+            </div>
+            <div class="space-y-1">
+              <p class="text-xs font-bold uppercase tracking-wider text-primary">CNPJ: 20.646.529/0001-94</p>
+              <p class="text-xs font-bold leading-snug text-foreground">CONSULTORIO DE PEDIATRIA OLHAR DE MAE LTDA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-16">
+        <div class="space-y-3">
+          <h5 class="text-[10px] font-bold uppercase tracking-widest text-muted">Contato</h5>
+          <p class="flex items-center gap-2 text-sm">
+            <i data-lucide="map-pin" class="size-4 text-primary"></i> Montes Claros, MG
+          </p>
+          <a href="tel:3830832343" class="flex items-center gap-2 text-sm transition-colors hover:text-primary">
+            <i data-lucide="phone" class="size-4 text-primary"></i> (38) 3083-2343
+          </a>
+          <p class="text-[10px] uppercase tracking-wider opacity-60">Consultas e demais serviços</p>
+          <a href="tel:38988271373" class="flex items-center gap-2 text-sm transition-colors hover:text-primary">
+            <i data-lucide="message-circle" class="size-4 text-primary"></i> (38) 9 8827-1373
+          </a>
+          <p class="text-[10px] uppercase tracking-wider opacity-60">Vacinação e orientações (WhatsApp)</p>
+        </div>
+
+        <div class="space-y-3">
+          <h5 class="text-[10px] font-bold uppercase tracking-widest text-muted">Siga-nos</h5>
+          <a href="https://instagram.com/clinicaolhardemae" target="_blank" rel="noreferrer" class="flex items-center gap-2 text-sm transition-colors hover:text-primary">
+            <i data-lucide="camera" class="size-4 text-primary"></i> @clinicaolhardemae
+          </a>
+          <p class="flex items-center gap-2 text-sm">
+            <i data-lucide="globe" class="size-4 text-primary"></i> Olhar de Mãe
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-20 max-w-7xl border-t border-foreground/5 pt-8 text-center">
+      <a href="/politica-de-privacidade" class="mb-2 block text-[10px] uppercase tracking-widest text-muted transition-colors hover:text-primary">Política de Privacidade</a>
+      <p class="text-[10px] uppercase tracking-widest italic opacity-40">
+        © <script>document.write(new Date().getFullYear())</script> Olhar de Mãe. O cuidado que atravessa gerações.
+      </p>
+      <p class="mt-2 text-[10px] uppercase tracking-widest italic opacity-40">
+        Consultório de Pediatria Olhar de Mãe LTDA · CNPJ 20.646.529/0001-94
+      </p>
+    </div>
+  </footer>
+
+  <!-- Sticky WhatsApp -->
+  <a
+    href="https://wa.me/5538988271373"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="Falar no WhatsApp"
+    class="fixed bottom-8 right-8 z-[100] flex items-center gap-3 rounded-2xl bg-[#25D366] p-4 text-white shadow-2xl transition-transform hover:scale-110"
+  >
+    <i data-lucide="message-circle" class="size-5"></i>
+    <span class="hidden pr-2 text-sm font-bold sm:inline">Falar no WhatsApp</span>
+  </a>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

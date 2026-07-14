@@ -865,6 +865,21 @@ function Footer() {
             Clínica pediátrica em Montes Claros — MG. Pediatria 24h, vacinação e equipe
             multidisciplinar há mais de 11 anos.
           </p>
+          <div className="mt-6 rounded-2xl border border-primary/20 bg-primary/5 p-4 transition-all hover:border-primary/40 hover:bg-primary/10">
+            <div className="flex items-start gap-3">
+              <div className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary text-white shadow-md shadow-primary/20">
+                <ShieldCheck className="size-5" />
+              </div>
+              <div className="space-y-1">
+                <p className="text-xs font-bold uppercase tracking-wider text-primary">
+                  CNPJ: 20.646.529/0001-94
+                </p>
+                <p className="text-xs font-bold leading-snug text-foreground">
+                  CONSULTORIO DE PEDIATRIA OLHAR DE MAE LTDA
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-16">
           <div className="space-y-3">
